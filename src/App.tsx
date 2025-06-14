@@ -146,6 +146,16 @@ const App: React.FC = () => {
               <p className="text-sm mt-2">
                 Sorteio realizado em: {drawTime.toLocaleString()}
               </p>
+              <Button
+                onClick={() => {
+                  setWinners([]);
+                  setDrawTime(null);
+                  setShowConfetti(false);
+                }}
+                className="bg-accent hover:opacity-90 text-foreground font-sans py-2 px-4 rounded mt-4"
+              >
+                Realizar novo sorteio
+              </Button>
             </div>
           )}
         </CardContent>
@@ -159,6 +169,7 @@ const App: React.FC = () => {
 };
 
 export default App;
+
 
 
 
