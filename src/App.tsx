@@ -79,7 +79,7 @@ const App: React.FC = () => {
 
   return (
     <div className="h-screen w-screen flex items-center justify-center bg-transparent text-foreground">
-      <Card className="p-8 shadow-lg aspect-video w-[800px]">
+      <Card className="shadow-lg w-[800px] h-[450px]">
         <CardHeader>
           <h1 className="text-2xl font-bold mb-4 text-center">
             SORTEIO DE BRINDES
@@ -111,7 +111,7 @@ const App: React.FC = () => {
                   placeholder="Insira os nomes separados por vírgulas"
                   value={namesInput}
                   onChange={(e) => setNamesInput(e.target.value)}
-                  className="border border-border rounded p-2 bg-input text-foreground w-full h-64 resize-y overflow-auto"
+                  className="border border-border rounded p-2 bg-input text-foreground w-full h-48 resize-y overflow-auto"
                 />
               </div>
               <div>
@@ -159,5 +159,8 @@ const App: React.FC = () => {
 };
 
 export default App;
+
+
+
 
 
